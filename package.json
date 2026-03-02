@@ -1,0 +1,44 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind:init": "./node_modules/.bin/tailwindcss init -p",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix"
+  },
+  "dependencies": {
+    "firebase": "^12.2.1",
+    "leaflet": "^1.9.4",
+    "leaflet-geometryutil": "^0.10.3",
+    "leaflet-rotate": "^0.2.8",
+    "leaflet-rotatedmarker": "^0.2.0",
+    "leaflet-routing-machine": "^3.2.12",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.9.1",
+    "react-scripts": "^0.0.0"
+  },
+  "devDependencies": {
+    "@eslint/css": "^0.11.1",
+    "@eslint/js": "^9.36.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "baseline-browser-mapping": "^2.10.0",
+    "eslint": "^9.36.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.4.0",
+    "tailwindcss": "^4.1.14",
+    "vite": "^7.1.2"
+  }
+}
