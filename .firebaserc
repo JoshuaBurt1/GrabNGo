@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "fooddelivery196"
-  }
+  },
+  "targets": {
+    "fooddelivery196": {
+      "hosting": {
+        "main-site": [
+          "grab-and-go"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

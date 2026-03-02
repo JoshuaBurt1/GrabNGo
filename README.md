@@ -6,4 +6,4 @@ Decide whether you want to log in as an ordering user, restaurant manager that s
 
 ## Getting Started
 
-https://fooddelivery196.web.app/
+https://grab-and-go.web.app/
