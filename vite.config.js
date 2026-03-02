@@ -11,8 +11,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'Food Delivery 196',
-        short_name: 'Food196',
+        name: 'Grab-and-Go Food Delivery',
+        short_name: 'GrabNGo',
         description: 'Local Food Delivery App',
         theme_color: '#FDF5E6',
         icons: [
