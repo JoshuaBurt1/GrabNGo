@@ -17,8 +17,15 @@ export default function Login({ role }) {
 
   // AUTHENTICATION - GoogleAuthProvider; REFERENCE: https://firebase.google.com/docs/reference/node/firebase.auth.GoogleAuthProvider
   const login = async () => {
-    setErr(""); setLoading(true);
+    setErr(""); 
+    setLoading(true);
+    
     const provider = new GoogleAuthProvider();
+    // Prompt the user to select their account explicitly
+    provider.setCustomParameters({
+      prompt: "select_account"
+    });
+
     try {
       await signInWithPopup(auth, provider);
       navigate(`/${role}`);
