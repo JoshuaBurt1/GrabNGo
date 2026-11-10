@@ -1,6 +1,6 @@
 // This translates an address string into a coordinate array (forward geocoding) using OpenCage API (https://opencagedata.com/)
 export async function geocodeAddress(address) {
-  const apiKey = "b74715ad7e3d48bcb323718ef3d0f828";
+  const apiKey = import.meta.env.VITE_OPENCAGE_API_KEY;
   const url = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(
     address
   )}&key=${apiKey}`;

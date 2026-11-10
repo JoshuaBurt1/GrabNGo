@@ -7,13 +7,13 @@ import { getAnalytics } from "firebase/analytics";
 // Firebase configuration file obtained from Firebase Console / Project / Settings / General
 // this allows the web app to connect to firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyCrpKGEtXxx3Bj_bCWub1mvxULwYG8fWO4",
-  authDomain: "fooddelivery196.firebaseapp.com",
-  projectId: "fooddelivery196",
-  storageBucket: "fooddelivery196.firebasestorage.app",
-  messagingSenderId: "239076059413",
-  appId: "1:239076059413:web:550bea2a3f7e81bf29611c",
-  measurementId: "G-P1D1HG58SB",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MESSUREMENT_ID,
 };
 
 // Initialize Firebase

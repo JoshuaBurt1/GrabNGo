@@ -34,7 +34,6 @@ import OrdersTabSkeleton from "../components/OrderTabSkeleton.jsx";
 import MessagesTabSkeleton from "../components/MessagesTabSkeleton";
 import SettingsTabSkeleton from "../components/SettingsTabSkeleton";
 
-import { dummyRestaurants } from "../assets/dummyRestaurants.js"; // assets
 import defaultProfileImg from "../assets/defaultProfile.svg";
 import editIcon from "../assets/edit.svg";
 
@@ -190,7 +189,7 @@ const carIcon = divIcon({
         setRestaurantsLoading(true);
         const snap = await getDocs(collection(db, "restaurants"));
         const fetched = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-        setAllRestaurants([...fetched, ...dummyRestaurants]);
+        setAllRestaurants([...fetched]);
         setTimeout(() => setRestaurantsLoading(false), 600); // Artificial delay for ux testing
       } catch (err) {
         console.error("Error fetching restaurants:", err);

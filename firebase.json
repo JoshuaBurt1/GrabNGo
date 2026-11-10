@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "grab-and-go",
+    "target": "fooddelivery196",
     "public": "dist",
     "rewrites": [
       {

@@ -5,8 +5,15 @@
   "targets": {
     "fooddelivery196": {
       "hosting": {
-        "main-site": [
+        "fooddelivery196": [
           "grab-and-go"
+        ]
+      }
+    },
+    "portfolio-ede78": {
+      "hosting": {
+        "main-site": [
+          "fooddelivery196"
         ]
       }
     }
