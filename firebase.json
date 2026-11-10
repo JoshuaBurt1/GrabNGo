@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target": "fooddelivery196",
+    "target": "fooddelivery79-d62ff",
     "public": "dist",
     "rewrites": [
       {
