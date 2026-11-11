@@ -11,7 +11,7 @@ export async function geocodeAddress(address) {
         address
       )}&key=${apiKey}`;
     } else {
-      url = `/api/geocode_proxy?q=${encodeURIComponent(address)}`;
+      url = `/api/geocode-proxy?q=${encodeURIComponent(address)}`;
     }
 
     const response = await fetch(url);
